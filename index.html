@@ -284,45 +284,43 @@
     </div>
 
     <div>
-      <iframe
-        src="https://www.google.com/maps?q=Carrer+Gremi+Teixidors+24B,+Palma&output=embed"
-        allowfullscreen="" loading="lazy">
-      </iframe>
+      <iframe src="https://www.google.com/maps?q=Carrer+Gremi+Teixidors+24B,+Palma&output=embed" allowfullscreen loading="lazy"></iframe>
     </div>
   </section>
 
   <section id="trabajos">
-  <h2>Trabajos Realizados</h2>
-  <div class="carrusel-container">
-    <div class="carrusel-wrapper" id="carrusel">
-      <img src="imagenes/foto2.jpg" alt="Trabajo 2">
-      <img src="imagenes/foto3.jpg" alt="Trabajo 3">
-      <img src="imagenes/foto4.jpg" alt="Trabajo 4">
-      <img src="imagenes/foto5.jpg" alt="Trabajo 5">
-      <img src="imagenes/foto6.jpg" alt="Trabajo 6">
-      <img src="imagenes/foto7.jpg" alt="Trabajo 7">
-      <img src="imagenes/foto8.jpg" alt="Trabajo 8">
-      <img src="imagenes/foto9.jpg" alt="Trabajo 9">
-      <img src="imagenes/foto10.jpg" alt="Trabajo 10">
-      <img src="imagenes/foto11.jpg" alt="Trabajo 11">
-      <img src="imagenes/foto12.jpg" alt="Trabajo 12">
-      <img src="imagenes/foto13.jpg" alt="Trabajo 13">
-      <img src="imagenes/foto14.jpg" alt="Trabajo 14">
-      <img src="imagenes/foto15.jpg" alt="Trabajo 15">
-      <img src="imagenes/foto16.jpg" alt="Trabajo 16">
-      <img src="imagenes/foto17.jpg" alt="Trabajo 17">
-      <img src="imagenes/foto18.jpg" alt="Trabajo 18">
-      <img src="imagenes/foto19.jpg" alt="Trabajo 19">
-      <img src="imagenes/foto20.jpg" alt="Trabajo 20">
-      <img src="imagenes/foto21.jpg" alt="Trabajo 21">
+    <h2>Trabajos Realizados</h2>
+    <div class="carrusel-container">
+      <div class="carrusel-wrapper" id="carrusel">
+        <!-- 20 imágenes del carrusel -->
+        <!-- Asegúrate que los archivos existan en la carpeta imagenes/ -->
+        <img src="imagenes/foto2.jpg" alt="Trabajo 2">
+        <img src="imagenes/foto3.jpg" alt="Trabajo 3">
+        <img src="imagenes/foto4.jpg" alt="Trabajo 4">
+        <img src="imagenes/foto5.jpg" alt="Trabajo 5">
+        <img src="imagenes/foto6.jpg" alt="Trabajo 6">
+        <img src="imagenes/foto7.jpg" alt="Trabajo 7">
+        <img src="imagenes/foto8.jpg" alt="Trabajo 8">
+        <img src="imagenes/foto9.jpg" alt="Trabajo 9">
+        <img src="imagenes/foto10.jpg" alt="Trabajo 10">
+        <img src="imagenes/foto11.jpg" alt="Trabajo 11">
+        <img src="imagenes/foto12.jpg" alt="Trabajo 12">
+        <img src="imagenes/foto13.jpg" alt="Trabajo 13">
+        <img src="imagenes/foto14.jpg" alt="Trabajo 14">
+        <img src="imagenes/foto15.jpg" alt="Trabajo 15">
+        <img src="imagenes/foto16.jpg" alt="Trabajo 16">
+        <img src="imagenes/foto17.jpg" alt="Trabajo 17">
+        <img src="imagenes/foto18.jpg" alt="Trabajo 18">
+        <img src="imagenes/foto19.jpg" alt="Trabajo 19">
+        <img src="imagenes/foto20.jpg" alt="Trabajo 20">
+        <img src="imagenes/foto21.jpg" alt="Trabajo 21">
+      </div>
+
+      <button class="prev" onclick="mover(-1)">❮</button>
+      <button class="next" onclick="mover(1)">❯</button>
+      <div class="dots" id="dots"></div>
     </div>
-
-    <button class="prev" onclick="mover(-1)">❮</button>
-    <button class="next" onclick="mover(1)">❯</button>
-    <div class="dots" id="dots"></div>
-  </div>
-</section>
-
+  </section>
 
   <footer>
     © 2025 CARPINTERÍA CASTRO - Todos los derechos reservados
@@ -375,7 +373,6 @@
     crearDots();
     actualizar();
     setInterval(autoplay, 4000);
-    window.addEventListener('resize', () => location.reload());
   </script>
 
   <!-- EmailJS -->
