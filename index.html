@@ -275,8 +275,8 @@
       <p><span>📍</span><strong>Carrer Gremi Teixidors 24B, Palma</strong></p>
 
       <form id="formulario">
-        <input type="text" name="user_name" placeholder="Tu nombre" required />
-        <input type="email" name="user_email" placeholder="Tu correo electrónico" required />
+        <input type="text" name="name" placeholder="Tu nombre" required />
+        <input type="email" name="email" placeholder="Tu correo electrónico" required />
         <textarea name="message" placeholder="Escribe tu mensaje..." rows="5" required></textarea>
         <button type="submit">Enviar mensaje</button>
         <p id="form-msg"></p>
@@ -383,7 +383,7 @@
     form.addEventListener("submit", function(e) {
       e.preventDefault();
 
-      emailjs.sendForm("service_qv041qm", "template_9x1guvw", this)
+      emailjs.sendForm("service_tubpx6f", "template_9x1guvw", this)
         .then(() => {
           mensaje.style.display = "block";
           mensaje.style.color = "lightgreen";
